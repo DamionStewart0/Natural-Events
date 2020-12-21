@@ -22,7 +22,7 @@ NASA api https://api.nasa.gov/planetary/apod?api_key=SuNMNenq9Fhd4NHja3iwsdJ4PFm
 - App will be optimize for but desktop and mobile viewports
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
+
 
 - Consume the Nasa api for current data 
 - Allow user to choose any location worldwide
