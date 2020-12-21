@@ -13,6 +13,7 @@ This project will be consuming a NASA api called Earth Observatory Natural Event
 NASA api https://api.nasa.gov/planetary/apod?api_key=SuNMNenq9Fhd4NHja3iwsdJ4PFmSaXYIb6RyEieK
 
 ## Wireframes
+https://www.figma.com/file/6RURMao3NZXUWt0pKJ6Fr2/EONET-APP?node-id=0%3A1
 
 
 
