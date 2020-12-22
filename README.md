@@ -10,7 +10,7 @@ Brew-haus.
 This project will be consuming the brewery db api. The user will be able to search by state and receive a response with all the breweries located in that state. The data will be rendered on  a map
 
 ## API and Data Sample
--Google Api https://developers.google.com/maps/documentation/javascript/overview
+-Mapbox Api https://docs.mapbox.com/api/maps/
 
 -Brewery db https://api.openbrewerydb.org/breweries?by_state=ohio'
 
@@ -31,13 +31,9 @@ Wireframe design https://wireframe.cc/Lf7nbM
 
 #### PostMVP  
 - A second api call will display a map where user can see the exact location of each brewery in that state
-- Google Maps Api will be used to visualized location data (lng, lat)
 - Use local storage to save data to the user's browser
-- Add event listener **
 
 ## Project Schedule
-
-
 
 |  Day | Deliverable | Status
 |---|---| ---|
@@ -50,13 +46,20 @@ Wireframe design https://wireframe.cc/Lf7nbM
 
 ## Priority Matrix
 
+-priority matrix https://wireframe.cc/QPIDOa
+
+
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Basic structure | H | 3hrs| hrs | hrs |
-| Working with APIs | H | 3hrs| hrs | hrs| 
-| styling HTML | H |  2 hrs  | hrs| hrs|
-| adding Event Listner| M| hrs | hrs| hrs|
+| Basic structure | H | 1hrs| hrs | hrs |
+| Req and recv data from APIs | H | 3hrs| hrs | hrs
+| HTML element(dynamically) | H | 1hrs| hrs| hrs|
+| Append HTML & data | H | 3 hrs| hrs  | hrs|
+| Style data recvd | M | 1 hrs| hrs|   hrs|
+| Style HTML | H |  2 hrs  | hrs| hrs|
+| Style map | L  |  1 hr |  hrs |  hrs|
+| adding Event Listner| M| 30 min | hrs| hrs|
 
 | Total | H | hrs| hrs | hrs |
 
