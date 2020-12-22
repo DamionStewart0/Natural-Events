@@ -52,14 +52,14 @@ Wireframe design https://wireframe.cc/Lf7nbM
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Basic structure | H | 1hrs| hrs | hrs |
-| Req and recv data from APIs | H | 3hrs| hrs | hrs
-| HTML element(dynamically) | H | 1hrs| hrs| hrs|
+| Basic structure | H | 3hrs| hrs | hrs |
+| Req and recv data from APIs | H | 6hrs| hrs | hrs
+| HTML element(dynamically) | H | 3hrs| hrs| hrs|
 | Append HTML & data | H | 3 hrs| hrs  | hrs|
-| Style data recvd | M | 1 hrs| hrs|   hrs|
-| Style HTML | H |  2 hrs  | hrs| hrs|
-| Style map | L  |  1 hr |  hrs |  hrs|
-| adding Event Listner| M| 30 min | hrs| hrs|
+| Style data recvd | M | 3 hrs| hrs|   hrs|
+| Style HTML | H |  3 hrs  | hrs| hrs|
+| Style map | L  |  3 hr |  hrs |  hrs|
+| adding Event Listner| M| 3 hrs | hrs| hrs|
 
 | Total | H | hrs| hrs | hrs |
 
