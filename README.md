@@ -1,37 +1,35 @@
-# Natural-Events
+
 # Project Overview
 
 ## Project Name
 
-EARTH-EVENTS.
+Brew-haus.
 
 ## Project Description
 
-This project will be consuming a NASA api called Earth Observatory Natural Events(EONET). The user will be able to input a location and receive a response with all the naturally occuring event along with pictures and information.
+This project will be consuming a brewery db api. The user will be able to search by state and receive a response with all the breweries located in that state. The data will be rendered on  a map
 
 ## API and Data Sample
-NASA api https://api.nasa.gov/planetary/apod?api_key=SuNMNenq9Fhd4NHja3iwsdJ4PFmSaXYIb6RyEieK
+Google Api https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly
+Brewery db https://api.openbrewerydb.org/breweries?by_state=ohio'
 
 ## Wireframes
-https://www.figma.com/file/6RURMao3NZXUWt0pKJ6Fr2/EONET-APP?node-id=0%3A1
+Wireframe design https://wireframe.cc/Lf7nbM
 
 
 
 ### MVP/PostMVP
-- Project will be built using HTML CSS and javascript.
-- Project will be utilising a HTTP client called Axios to access information from the api
+- Project will be utilising a HTTP client called Axios to access information from the brewery api
 - App will be optimize for but desktop and mobile viewports
 
 #### MVP 
-
-
-- Consume the Nasa api for current data 
-- Allow user to choose any location worldwide
+-  
+- User
 - Display response from api to screen
 
 #### PostMVP  
-- Add and event lister to hide text informatioon from api response
-- Use local storage to save user locations
+- Google Maps Api will be used to visualized location data (lng, lat)
+- Add event listener **
 
 ## Project Schedule
 
@@ -41,8 +39,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Dec 21| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|Dec 21| Project Approval | Incomplete
+|Dec 22| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
+|Dec 22| Project Approval | Incomplete
 |Dec 22| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Dec 23| Pseudocode / actual code | Incomplete
 |Jan 4| MVP | Incomplete
