@@ -7,7 +7,7 @@ Brew-haus.
 
 ## Project Description
 
-This project will be consuming a brewery db api. The user will be able to search by state and receive a response with all the breweries located in that state. The data will be rendered on  a map
+This project will be consuming the brewery db api. The user will be able to search by state and receive a response with all the breweries located in that state. The data will be rendered on  a map
 
 ## API and Data Sample
 Google Api https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly
@@ -20,12 +20,11 @@ Wireframe design https://wireframe.cc/Lf7nbM
 
 ### MVP/PostMVP
 - Project will be utilising a HTTP client called Axios to access information from the brewery api
+- A second api call will display a map where user can see exactly the exact location of each brewery in that state
 - App will be optimize for but desktop and mobile viewports
 
 #### MVP 
--  
-- User
-- Display response from api to screen
+ 
 
 #### PostMVP  
 - Google Maps Api will be used to visualized location data (lng, lat)
@@ -33,9 +32,7 @@ Wireframe design https://wireframe.cc/Lf7nbM
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
 
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
 |  Day | Deliverable | Status
 |---|---| ---|
