@@ -59,7 +59,7 @@ Wireframe design https://wireframe.cc/Lf7nbM
 | Style data recvd | M | 3 hrs| hrs|   hrs|
 | Style HTML | H |  3 hrs  | hrs| hrs|
 | Style map | L  |  3 hr |  hrs |  hrs|
-| adding Event Listner| M| 3 hrs | hrs| hrs|
+| Adding Event Listner| M| 3 hrs | hrs| hrs|
 
 | Total | H | hrs| hrs | hrs |
 
