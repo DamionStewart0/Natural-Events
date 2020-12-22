@@ -21,16 +21,16 @@ Wireframe design https://wireframe.cc/Lf7nbM
 
 
 
-### MVP/PostMVP
-- Project will be utilising a HTTP client called Axios to access information(website, address and phone) which will be displayed on the web page
-- A second api call will display a map where user can see the exact location of each brewery in that state
-- Project will utilise CSS @media to adjust content to different screen size.
+## MVP/PostMVP
 
 #### MVP
 - Data will be rendered in a column display facilitated by flexbox
+- Project will be utilising a HTTP client called Axios to access information(website, address and phone) which will be displayed on the web page
+- Project will utilise CSS @media to adjust content to different screen size.
  
 
 #### PostMVP  
+- A second api call will display a map where user can see the exact location of each brewery in that state
 - Google Maps Api will be used to visualized location data (lng, lat)
 - Use local storage to save data to the user's browser
 - Add event listener **
