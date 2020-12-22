@@ -10,7 +10,7 @@ Brew-haus.
 This project will be consuming the brewery db api. The user will be able to search by state and receive a response with all the breweries located in that state. The data will be rendered on  a map
 
 ## API and Data Sample
--Google Api https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly
+-Google Api https://maps.googleapis.com/maps/api
 
 -Brewery db https://api.openbrewerydb.org/breweries?by_state=ohio'
 
