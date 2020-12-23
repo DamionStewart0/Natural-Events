@@ -54,8 +54,8 @@ Wireframe design https://wireframe.cc/Lf7nbM
 | --- | :---: |  :---: | :---: | :---: |
 | Basic structure | H | 3 hrs| hrs | hrs |
 | Req and recv data from APIs | H | 6 hrs| 8 hrs | hrs
-| HTML element(dynamically) | H | 3 hrs| hrs| hrs|
-| Append HTML & data | H | 3 hrs| hrs  | hrs|
+| HTML element(dynamically) | H | 3 hrs| 1 hrs| hrs|
+| Append HTML & data | H | 3 hrs| 4 hrs  | hrs|
 | Style data recvd | M | 3 hrs| hrs|   hrs|
 | Style HTML | H |  3 hrs  | hrs| hrs|
 | Style map | L  |  3 hr |  hrs |  hrs|
