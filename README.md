@@ -37,9 +37,9 @@ Wireframe design https://wireframe.cc/Lf7nbM
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Dec 22| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|Dec 22| Project Approval | Incomplete
-|Dec 22| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|Dec 22| Prompt / Wireframes / Priority Matrix / Timeframes | complete
+|Dec 22| Project Approval | complete
+|Dec 22| Core Application Structure (HTML, CSS, etc.) | complete
 |Dec 23| Pseudocode / actual code | Incomplete
 |Jan 4| MVP | Incomplete
 |Jan 5| Presentations | Incomplete
@@ -53,7 +53,7 @@ Wireframe design https://wireframe.cc/Lf7nbM
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Basic structure | H | 3 hrs| hrs | hrs |
-| Req and recv data from APIs | H | 6 hrs| hrs | hrs
+| Req and recv data from APIs | H | 6 hrs| 8 hrs | hrs
 | HTML element(dynamically) | H | 3 hrs| hrs| hrs|
 | Append HTML & data | H | 3 hrs| hrs  | hrs|
 | Style data recvd | M | 3 hrs| hrs|   hrs|
