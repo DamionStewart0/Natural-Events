@@ -3,20 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
     <script defer src='./app.js'></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/a891260bfc.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='./style.css'>
     <title>Brew-Haus</title>
 </head>
 <body>
+    <h1 class='big-header'>Brew-Haus</h1>
     <div class="form-container">
         <form id='form'>
-            <h1 class='big-header'>Brew-Haus</h1>
-            <input class='input' type='text'>
-            <button class='button'>Search</button>
+            <input class='input' type='text' placeholder='ENTER STATE'>
+            <i class="fas fa-search"></i>
+            <!-- <button class='button'>search</button> -->
         </form>
+    </div>
+    <div class="data-container">
+        <div id="data">
+            <ol>
+        
+            </ol>
+            
+        </div>
     </div>
     <div class="map"></div>
     
 </body>
 </html>
+
+
        

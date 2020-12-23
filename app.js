@@ -1,7 +1,8 @@
-const url ='https://api.openbrewerydb.org/breweries';
+
 const button = document.querySelector('.button');
 const input = document.querySelector('.input');
-const safe = '';
+const form = document.querySelector('.form')
+
 
 
   
@@ -9,9 +10,10 @@ const safe = '';
 
 //make a request  through the axios client
 
-async function getData() {
+async function getData(state) {
+      const stateUrl = `https://api.openbrewerydb.org/breweries?by_state=${state}`
       try {
-const res = await axios.get('https://api.openbrewerydb.org/breweries');
+const res = await axios.get(`${stateUrl}`);
             const data = res.data;
             console.log(data)
 
@@ -21,6 +23,9 @@ const res = await axios.get('https://api.openbrewerydb.org/breweries');
       }
 
 }
+
+getData('california')
+
 
 
 
