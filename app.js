@@ -1,6 +1,8 @@
 
 const dataDiv = document.querySelector('#data');
-const button = document.querySelector('.fas fa-search')
+const button = document.querySelector('.button')
+const form = document.querySelector('.form');
+const input = document.querySelector('.input').value;
 
 
 
@@ -9,31 +11,32 @@ const button = document.querySelector('.fas fa-search')
 // console.log(form)
 
 
-function inputState(e){
-      e.preventDefault();
-      const form = document.querySelector('.form');
-      const input = document.querySelector('.input').value;
-      form.addEventListener('submit', getData)
-      getData(input)
+// function inputState('submit', e){
+//       e.preventDefault();
+      
+//       getData(input)
 
-}
+// }
+
+// button.addEventListener('click', getData);
+
 
 
 
 //make a request  through the axios client
 
-async function getData(state) {
-      const stateUrl = `https://api.openbrewerydb.org/breweries?by_state=${state}`
+async function getData() {
+      const stateUrl = `https://api.openbrewerydb.org/breweries?by_state=${input}`
       try {
       const res = await axios.get(`${stateUrl}`);
             const data = res.data;
-            console.log(data)
-            console.log(data[0].name)    
-            console.log(data[0].street)    
-            console.log(data[0].city)    
-            console.log(data[0].state)        
-            console.log(data[0].phone)    
-            console.log(data[0].website_url)    
+            // console.log(data)
+            // console.log(data[2].name)    
+            // console.log(data[0].street)    
+            // console.log(data[0].city)    
+            // console.log(data[0].state)        
+            // console.log(data[0].phone)    
+            // console.log(data[0].website_url)    
             showData(data)
       }catch(error) {
             console.log(error)
@@ -41,7 +44,9 @@ async function getData(state) {
       }
 
 };
- getData('georgia')
+// getData('new jersey')
+
+ 
 
 function showData(data) {
       dataDiv.innerHTML = ''
@@ -56,12 +61,15 @@ function showData(data) {
                   <p>${data.state}</p>
                   <p>${data.postal_code}</p>
                   <p>${data.phone}</p>
-                  <p>${data.website_url}</p><br/>
+                  <p><a href='${data.website_url}'>WEBSITE</a></p><br/><hr/>
             `        
       dataDiv.append(breweryInfo)
       });
 }
-showData(data)
+
+
+button.addEventListener('click', getData)
+
 
 
 
