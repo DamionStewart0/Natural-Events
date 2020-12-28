@@ -2,31 +2,41 @@
 const dataDiv = document.querySelector('#data');
 const button = document.querySelector('.button')
 const form = document.querySelector('.form');
-const input = document.querySelector('.input').value;
+const input = document.querySelector('.input');
+mapboxgl.accessToken = 'pk.eyJ1IjoiZGFtaW9uc3Rld2FydCIsImEiOiJja2owZ3VubjAxZTZpMnducmNiMm5pbGQ4In0.MILn0pnZ0lmlv97rr_c4cQ';
 
 
+      navigator.geolocation.getCurrentPosition(successLocation, errorLocation, {enableHighAccuracy: true});
 
-  
-// form.document.querySelector('submit', inputState);
-// console.log(form)
+      function successLocation(position) {
+            console.log(position)
+            setUpMap([position.coords.longitude, position.coords.latitude])
+            
+      }
 
+      function errorLocation () {
+            setUpMap([51.50, 0.126])
 
-// function inputState('submit', e){
-//       e.preventDefault();
-      
-//       getData(input)
+      }
 
-// }
+      function setUpMap(center) {
+            const map = new mapboxgl.Map({
+                  container: 'map',
+                  style: 'mapbox://styles/mapbox/streets-v11', 
+                  center: center, 
+                  zoom: 12 
+            }); 
+            const navigator = new mapboxgl.NavigationControl();
+            map.addControl(navigator)
+            
 
-// button.addEventListener('click', getData);
-
-
-
+      }
 
 //make a request  through the axios client
 
 async function getData() {
-      const stateUrl = `https://api.openbrewerydb.org/breweries?by_state=${input}`
+      const stateUrl = `https://api.openbrewerydb.org/breweries?by_state=${input.value}`
+      console.log(stateUrl)
       try {
       const res = await axios.get(`${stateUrl}`);
             const data = res.data;
@@ -38,13 +48,17 @@ async function getData() {
             // console.log(data[0].phone)    
             // console.log(data[0].website_url)    
             showData(data)
+            showDiv()
       }catch(error) {
             console.log(error)
 
       }
 
 };
-// getData('new jersey')
+
+function showDiv() {
+      document.querySelector('.data-container').style.visibility='visible'
+}
 
  
 
