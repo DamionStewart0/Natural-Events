@@ -40,7 +40,7 @@ Wireframe design https://wireframe.cc/Lf7nbM
 |Dec 22| Prompt / Wireframes / Priority Matrix / Timeframes | complete
 |Dec 22| Project Approval | complete
 |Dec 22| Core Application Structure (HTML, CSS, etc.) | complete
-|Dec 23| Pseudocode / actual code | Incomplete
+|Dec 23| Pseudocode / actual code | complete
 |Jan 4| MVP | Incomplete
 |Jan 5| Presentations | Incomplete
 
@@ -56,10 +56,10 @@ Wireframe design https://wireframe.cc/Lf7nbM
 | Req and recv data from APIs | H | 6 hrs| 8 hrs | hrs
 | HTML element(dynamically) | H | 3 hrs| 1 hrs| hrs|
 | Append HTML & data | H | 3 hrs| 4 hrs  | hrs|
-| Style data recvd | M | 3 hrs| hrs|   hrs|
-| Style HTML | H |  3 hrs  | hrs| hrs|
-| Style map | L  |  3 hr |  hrs |  hrs|
-| Adding Event Listner| M| 3 hrs | hrs| hrs|
+| Style data recvd | M | 3 hrs| 6 hrs|  6 hrs|
+| Style HTML | H |  3 hrs  |3.5 hrs| 3.5 hrs|
+| Style map | L  |  3 hr | 5 hrs | 5 hrs|
+| Adding Event Listner| M| 3 hrs |  7 hrs| 7 hrs|
 | Total | H | 27 hrs| hrs | hrs |
 
 
