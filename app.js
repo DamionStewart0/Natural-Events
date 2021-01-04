@@ -3,7 +3,7 @@ const dataDiv = document.querySelector('#data');
 const button = document.querySelector('.button')
 const form = document.querySelector('.form');
 const input = document.querySelector('.input');
-const stateUrl = `https://api.openbrewerydb.org/breweries?by_state=${input.value}`
+
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiZGFtaW9uc3Rld2FydCIsImEiOiJja2owZ3VubjAxZTZpMnducmNiMm5pbGQ4In0.MILn0pnZ0lmlv97rr_c4cQ';
 
@@ -28,39 +28,33 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZGFtaW9uc3Rld2FydCIsImEiOiJja2owZ3VubjAxZTZpM
                   container: 'map',
                   style: 'mapbox://styles/mapbox/dark-v10', 
                   center: center,
-                  zoom: 15 
+                  zoom: 8 
             }); 
             const navigator = new mapboxgl.NavigationControl(); // adds navigation controls
             map.addControl(navigator)
 
-            let marker = new mapboxgl.Marker()
-            .setLngLat([30.5, 50.5])
-            .addTo(map);
-
-      //       map.addControl(
-      //             new MapboxGeocoder({
-      //             accessToken: mapboxgl.accessToken,
-      //             mapboxgl: mapboxgl
-      //             })
-      // );
+            let marker = new mapboxgl.Marker().setLngLat([-74.2390828, 40.7985699]).addTo(map);
+            generateMarker(getData())
+   
       };
       
      
 
-     // generate marker from the long & lat found in data
-      // function generateMarker() {
-      //       data.forEach((data) => {
-      //       const markers = new mapboxgl.Marker().setLngLat([data.longitude, data.latitude]).addTo(map)
-      //       console.log(data, markers)
-      //      })
-      // }
-      // generateMarker(getData())
+     //generate marker from the long & lat found in data
+      function generateMarker(data) {
+            data.forEach(() => {
+            const markers = new mapboxgl.Marker().setLngLat([data.longitude, data.latitude]).addTo(map)
+            console.log()
+           })
+      }
+      
 
 
 
 //make a request  through the axios client
 
 async function getData() {
+      const stateUrl = `https://api.openbrewerydb.org/breweries?by_state=${input.value}`
       
       console.log(stateUrl)
       try {
