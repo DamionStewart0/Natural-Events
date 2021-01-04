@@ -42,7 +42,7 @@ Wireframe design https://wireframe.cc/Lf7nbM
 |Dec 22| Core Application Structure (HTML, CSS, etc.) | complete
 |Dec 23| Pseudocode / actual code | complete
 |Jan 4| MVP | complete
-|Jan 5| Presentations | Incomplete
+|Jan 5| Post MVP & Presentations | Incomplete
 
 ## Priority Matrix
 
@@ -61,7 +61,7 @@ Wireframe design https://wireframe.cc/Lf7nbM
 | Style map | L  |  3 hr | 5 hrs | 5 hrs|
 | Adding Event Listner| M| 3 hrs |  7 hrs| 7 hrs|
 | Add Markers & render to screen|H | 1hrs| 10 hrs| 10hrs
-| Total | 28 hrs| 47hrs | 47hrs |
+| Total  |  | 28 hrs| 47hrs | 47hrs |
 
 
 
