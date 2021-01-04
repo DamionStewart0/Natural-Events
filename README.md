@@ -3,7 +3,7 @@
 
 ## Project Name
 
-Brew-haus.
+Brewery Locator.
 
 ## Project Description
 
