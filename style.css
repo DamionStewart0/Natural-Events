@@ -26,7 +26,7 @@ h4 {
 h1 {
     position: relative;
     text-transform: uppercase;
-    color: #1a0e0f;
+    color: cornflowerblue;
     top: 50px;
     left: 50px;
     font-size: 45px;
@@ -107,10 +107,22 @@ h1 {
     z-index: 100;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     .button {
+        margin: 0 auto;
+        margin-top: 10px;
+        
+    }
+    .form-container {
+        text-align: center;
+        padding-right: 70px;
+    }
+   
+    .fas {
         position: relative;
-        bottom: 20px;
+        top: 50px;
+        left: 235px
+        
     }
 }
 

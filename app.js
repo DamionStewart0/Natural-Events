@@ -1,8 +1,10 @@
-const safe = ''
+const safe = '-74.2390828, 40.7985699'  
 const dataDiv = document.querySelector('#data');
 const button = document.querySelector('.button')
 const form = document.querySelector('.form');
 const input = document.querySelector('.input');
+let currentLongitude;
+let currentLatitude;
 
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiZGFtaW9uc3Rld2FydCIsImEiOiJja2owZ3VubjAxZTZpMnducmNiMm5pbGQ4In0.MILn0pnZ0lmlv97rr_c4cQ';
@@ -12,13 +14,16 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZGFtaW9uc3Rld2FydCIsImEiOiJja2owZ3VubjAxZTZpM
 
       function successLocation(position) {
             console.log(position)
-            setUpMap([position.coords.longitude, position.coords.latitude])
+            currentLongitude = position.coords.longitude;
+            currentLatitude = position.coords.latitude;
+                                                   
+            setUpMap([[currentLongitude, currentLatitude]])
             
       }
 
       // default location if user do not allow geolocation
       function errorLocation () {
-            setUpMap([-119.9537, 39.2481])
+            setUpMap([[-119.9537, 39.2481]])
 
       }
 
@@ -27,26 +32,21 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZGFtaW9uc3Rld2FydCIsImEiOiJja2owZ3VubjAxZTZpM
             const map = new mapboxgl.Map({
                   container: 'map',
                   style: 'mapbox://styles/mapbox/dark-v10', 
-                  center: center,
-                  zoom: 8 
+                  center: center[0],
+                  zoom: 6
             }); 
+            
             const navigator = new mapboxgl.NavigationControl(); // adds navigation controls
             map.addControl(navigator)
 
-            let marker = new mapboxgl.Marker().setLngLat([-74.2390828, 40.7985699]).addTo(map);
-            generateMarker(getData())
+            center.forEach((brewery)=> {
+                  let marker = new mapboxgl.Marker().setLngLat(brewery).addTo(map)
+            })
    
       };
       
      
 
-     //generate marker from the long & lat found in data
-      function generateMarker(data) {
-            data.forEach(() => {
-            const markers = new mapboxgl.Marker().setLngLat([data.longitude, data.latitude]).addTo(map)
-            console.log()
-           })
-      }
       
 
 
@@ -71,7 +71,6 @@ async function getData() {
             showDiv()
       }catch(error) {
             console.log(error)
-
       }
 
 };
@@ -86,6 +85,12 @@ function showDiv() {
 function showData(data) {
       dataDiv.innerHTML = ''
 
+      const breweries = [];
+      data.forEach((data)=> {
+            breweries.push([data.longitude, data.latitude])
+      })
+      setUpMap(breweries)
+
       data.forEach((data) => {
             let breweryInfo = document.createElement('div');
             breweryInfo.innerHTML =
@@ -96,8 +101,6 @@ function showData(data) {
                   <p>${data.state}</p>
                   <p>${data.postal_code}</p>
                   <p>${data.phone}</p>
-                  <p>${data.longitude}</p>
-                  <p>${data.latitude}</p>
                   <p><a href='${data.website_url}'>WEBSITE</a></p><br/><hr/>
             `      
       dataDiv.append(breweryInfo)
