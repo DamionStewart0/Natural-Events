@@ -61,7 +61,7 @@ Wireframe design https://wireframe.cc/Lf7nbM
 | Style map | L  |  3 hr | 5 hrs | 5 hrs|
 | Adding Event Listner| M| 3 hrs |  7 hrs| 7 hrs|
 | Add Markers & render to screen|H | 1hrs| 10 hrs| 10hrs
-| Total | H | 28 hrs| 47hrs | 47hrs |
+| Total |  | 28 hrs| 47hrs | 47hrs |
 
 
 
