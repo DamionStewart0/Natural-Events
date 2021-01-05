@@ -41,8 +41,8 @@ Wireframe design https://wireframe.cc/Lf7nbM
 |Dec 22| Project Approval | complete
 |Dec 22| Core Application Structure (HTML, CSS, etc.) | complete
 |Dec 23| Pseudocode / actual code | complete
-|Jan 4| MVP | complete
-|Jan 5| Post MVP & Presentations | complete
+|Jan 4| MVP Post MVP | complete
+|Jan 5| Presentations | complete
 
 ## Priority Matrix
 
