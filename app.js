@@ -1,4 +1,4 @@
-const safe = '-74.2390828, 40.7985699'  
+  
 const dataDiv = document.querySelector('#data');
 const button = document.querySelector('.button')
 const form = document.querySelector('.form');
@@ -33,7 +33,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZGFtaW9uc3Rld2FydCIsImEiOiJja2owZ3VubjAxZTZpM
                   container: 'map',
                   style: 'mapbox://styles/mapbox/dark-v10', 
                   center: center[0],
-                  zoom: 6
+                  zoom: 7
             }); 
             
             const navigator = new mapboxgl.NavigationControl(); // adds navigation controls
@@ -51,7 +51,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZGFtaW9uc3Rld2FydCIsImEiOiJja2owZ3VubjAxZTZpM
 
 
 
-//make a request  through the axios client
+//make a request  through the axios client to the open brewery db api
 
 async function getData() {
       const stateUrl = `https://api.openbrewerydb.org/breweries?by_state=${input.value}`
@@ -59,14 +59,7 @@ async function getData() {
       console.log(stateUrl)
       try {
       const res = await axios.get(`${stateUrl}`);
-            const data = res.data;
-            console.log(data)
-      //       console.log(data[2].name)    
-      //       console.log(data[0].street)    
-      //       console.log(data[0].city)    
-      //       console.log(data[0].state)        
-      //       console.log(data[0].phone)    
-      //       console.log(data[0].website_url)    
+            const data = res.data;  
             showData(data)
             showDiv()
       }catch(error) {
@@ -75,21 +68,21 @@ async function getData() {
 
 };
 
-// show the data-container div only when called
+// show the data-container div when search button is clicked
 function showDiv() {
       document.querySelector('.data-container').style.visibility='visible'
 }
 
  
-
+// rendering the data to the page
 function showData(data) {
       dataDiv.innerHTML = ''
 
       const breweries = [];
       data.forEach((data)=> {
-            breweries.push([data.longitude, data.latitude])
+            breweries.push([data.longitude, data.latitude]) // filter the lng and lat into an array
       })
-      setUpMap(breweries)
+      setUpMap(breweries) 
 
       data.forEach((data) => {
             let breweryInfo = document.createElement('div');
@@ -101,7 +94,7 @@ function showData(data) {
                   <p>${data.state}</p>
                   <p>${data.postal_code}</p>
                   <p>${data.phone}</p>
-                  <p><a href='${data.website_url}'>WEBSITE</a></p><br/><hr/>
+                  <p><a href='${data.website_url}' target='_blank'>WEBSITE</a></p><br/><hr/>
             `      
       dataDiv.append(breweryInfo)
       });
