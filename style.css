@@ -133,6 +133,7 @@ h1 {
 
     }
     #last-name {
+        font-size: 10px;
         position: relative;
         top: 50px;
     }
